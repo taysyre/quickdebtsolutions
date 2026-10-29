@@ -32,9 +32,3 @@ if ('IntersectionObserver' in window) {
 }
 
 document.querySelector('#year').textContent = new Date().getFullYear();
-
-document.querySelector('#contact-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const message = document.querySelector('#form-message');
-  message.textContent = 'Thanks for your enquiry. This form is a front-end preview and is not connected yet. Please add a verified email address and form service before publishing.';
-});
